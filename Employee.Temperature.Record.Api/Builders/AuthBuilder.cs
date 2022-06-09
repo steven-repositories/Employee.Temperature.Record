@@ -22,6 +22,8 @@ namespace Employee.Temperature.Record.Api.Builders {
         }
 
         public override IRecordResponse Execute() {
+            base.Execute();
+
             return RecordContainer
                 .GetBaseController()
                 .ProcessAuthRequest(this);
